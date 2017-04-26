@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>知影</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style>
+        .dropdown, .firstpage {
+            margin: auto 20px;
+        }
+
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+    </style>
+</head>
+<body background="image/background.jpg" style="background-position: top center; background-repeat:no-repeat;background-color:snow">
+<div class="container" style="margin-top: 250px" >
+    <nav class="navbar navbar-default" role="navigation" style="margin-bottom: 3px">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#"
+                   style="margin-left: 100px;font-size: 35px;margin-right: 80px;color: deepskyblue;">知影</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="firstpage"><a href="#">首页</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">电影人员<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="width: 300px">
+                            <li style="font-size: 12px;margin-left: 5px;line-height: 12px;color: #2e6da4">电影导演</li>
+                            <li class="divider"></li>
+                            <li><a href="http://v.baidu.com/person_intro/?id=272&video_uri=person_card">冯小刚</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://v.baidu.com/person_intro/?id=2056&video_uri=person_card">周星驰</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://v.baidu.com/person_intro/?id=756&video_uri=person_card">詹姆斯·卡梅隆</a></li>
+                            <li class="divider"></li>
+                            <li style="font-size: 12px;margin-left: 5px;line-height: 12px;color: #2e6da4">电影演员</li>
+                            <li class="divider"></li>
+                            <li><a href="http://v.baidu.com/person_intro/?id=273&video_uri=person_card">葛优</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://v.baidu.com/person_intro/?id=519&video_uri=person_card">周润发</a></li>
+                            <li class="divider"></li>
+                            <li style="font-size: 12px;margin-left: 5px;line-height: 12px;color: #2e6da4">电影制片人</li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="http://baike.baidu.com/link?url=7wZQ9bsX6JQeT3v0zh0EryP89-REAw3PlBYjYPkTsQHnDugDDFtqCb_dIyQUlr1aGxmhStwDYn3KO3U7SeZpBm_HGGnprxQBfYEFGRaJ-jNf-hXqnGOt8h1FMaQzaxpj">陆国强</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">电影分类 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="width: 300px">
+                            <li><a href="http://www.xiamp4.com/GvodHtml/1.html"> 动作片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/2.html">喜剧片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/3.html">爱情片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/4.html">科幻片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/5.html">恐怖片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/6.html">剧情片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/13.html">战争片</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/GvodHtml/14.html">其它片</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">电影社区 <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="width: 300px">
+                            <li><a href="http://tieba.baidu.com/f?kw=%E7%94%B5%E5%BD%B1&ie=utf-8">电影吧</a></li>
+                            <li class="divider"></li>
+                            <li>
+                                <a href="http://image.baidu.com/search/index?tn=baiduimage&ct=201326592&lm=-1&cl=2&ie=gbk&word=%B5%E7%D3%B0%BA%A3%B1%A8%B4%F3%C8%AB&hs=0&fr=ala&ori_query=%E7%94%B5%E5%BD%B1%E6%B5%B7%E6%8A%A5%E5%A4%A7%E5%85%A8&ala=0&alatpl=sp&pos=0">电影海报</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.moviego.tw/">电影微社群</a></li>
+                            <li class="divider"></li>
+                            <li><a href="http://www.xiamp4.com/">资源下载</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span
+                                class="glyphicon glyphicon-star"></span><span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="width: 300px">
+                            <li style="font-size: 15px;margin-left: 5px;line-height: 12px;color: #2e6da4">联系开发者</li>
+                            <li class="divider"></li>
+                            <li><a href="#"><img style="width: 250px;height: 400px" src="image/author.jpg"></a></li>
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            <img src="image/people.jpg" style="width: 20px;height: 20px">
+                            <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu" style="width: 300px">
+                            <li style="font-size: 16px;margin-left: 20px">
+                                <script>document.write("欢迎" + localStorage.username)</script>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="personalPage.html">个人主页</a></li>
+                            <li class="divider"></li>
+                            <li><a href="setPersonalData.html">修改个人资料</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <a href="http://news.mtime.com/2016/09/19/1559869.html#/story/1">
+                    <img src="image/1.jpg" alt="..." style="width: 1200px;height:360px">
+                </a>
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <a href="http://news.mtime.com/2016/09/19/1559880.html">
+                    <img src="image/2.jpg" alt="..." style="width: 1200px;height:360px">
+                </a>
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <a href="http://news.mtime.com/2016/09/23/1560059.html">
+                    <img src="image/3.jpg" alt="..." style="width: 1200px;height:360px">
+                </a>
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <a href="http://news.mtime.com/2016/09/19/1559839.html">
+                    <img src="image/4.jpg" alt="..." style="width: 1200px;height:360px">
+                </a>
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            <div class="item">
+                <a href="http://news.mtime.com/2016/08/29/1559161.html">
+                    <img src="image/5.jpg" alt="..." style="width: 1200px;height:360px">
+                </a>
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+        </div>
+
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <div class="tuijianmoive">
+        <h2 style="border-bottom: 1px solid #ffffff;color:white;">推荐<a href="http://www.xiamp4.com/GvodHtml/14.html"
+                                                                 style="font-size: 18px;color:white;border-left: 1px solid blue;margin-left: 10px;padding-left: 5px">更多</a>
+        </h2>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/14.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>不惧风暴</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP18778.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px">
+            <div class="thumbnail">
+                <img src="image/15.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>第二次爱你</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP24097.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/16.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>幸运是我</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP24077.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/17.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>超能敢死队</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP24091.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/18.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>蜘蛛侠3</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP1093.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/19.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>美国队长3</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP22158.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/20.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>隧道</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP24021.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="row" style="float: left;margin: 5px 2px;">
+            <div class="thumbnail">
+                <img src="image/21.jpg" alt="..." style="width: 128px;height: 180px;">
+                <div class="caption">
+                    <h4>X战警：天启</h4>
+                    <p><a href="http://www.xiamp4.com/Html/GP23163.html" class="btn btn-primary btn-sm"
+                          role="button">下载</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container1" style="background-color: whitesmoke">
+        <div class="actionmoive" >
+            <h2 style="border-bottom: 1px solid cornflowerblue">动作片<a href="http://www.xiamp4.com/GvodHtml/1.html"
+                                                                                  style="font-size: 18px;border-left: 1px solid blue;margin-left: 10px;padding-left: 5px">更多</a>
+            </h2>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/6.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>绝地逃亡</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP22123.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px">
+                <div class="thumbnail">
+                    <img src="image/7.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>釜山行</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP24007.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/8.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>危城</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23571.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/9.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>使徒行者</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23516.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/10.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>忍者神龟2</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23379.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/11.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>寒战2</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23382.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/12.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>终极硬汉</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP24070.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/13.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>惊天大逆转</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23420.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="xijumoive">
+            <h2 style="border-bottom: 1px solid cornflowerblue">喜剧片<a href="http://www.xiamp4.com/GvodHtml/2.html"
+                                                                                  style="font-size: 18px;border-left: 1px solid blue;margin-left: 10px;padding-left: 5px">更多</a>
+            </h2>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/22.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>人间大浩劫</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP1156.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px">
+                <div class="thumbnail">
+                    <img src="image/23.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>蜘蛛侠3</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP1093.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/24.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>美国队长3</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP22158.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/25.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>超能敢死队</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP24091.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/26.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>独立日2</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23160.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/27.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>梦魇猎手</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP16815.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/28.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>海云台</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP4794.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="float: left;margin: 5px 2px;">
+                <div class="thumbnail">
+                    <img src="image/21.jpg" alt="..." style="width: 128px;height: 180px;">
+                    <div class="caption">
+                        <h4>X战警：天启</h4>
+                        <p><a href="http://www.xiamp4.com/Html/GP23163.html" class="btn btn-primary btn-sm"
+                              role="button">下载</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="moivepinglun">
+            <h2 style="border-bottom: 1px solid white">电影影评<a href="http://www.mmonly.cc/tstx/dyyp/"
+                                                                          style="font-size: 18px;border-left: 1px solid blue;margin-left: 10px;padding-left: 5px">更多</a>
+            </h2>
+            <ul class="media-list" style="clear: both">
+                <li class="media">
+                    <a class="media-left" href="http://www.mmonly.cc/tstx/dyyp/83933.html">
+                        <img style="width: 200px;height: 300px" src="image/29.jpg" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h2 class="media-heading" style="margin: 30px auto;border-bottom: 1px solid deepskyblue">
+                            《分手再说我爱你》方力申邓丽欣爱斗气</h2>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;由方力申邓丽欣这对十年长情CP首部合作的电影作品《分手再说我爱你》即将于12月18日在各大影院上映，影片故事主题讲述了夫妻婚后“十年之痒”的窘境该何去何从?相爱不易但相守更是不易，下面就让我们先来了解下这部电影的相关资料信息吧!
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+            <ul class="media-list" style="clear: both">
+                <li class="media">
+                    <div class="media-body">
+                        <h2 class="media-heading" style="margin: 30px auto;border-bottom: 1px solid deepskyblue">
+                            《他来了请闭眼》鲜花食人魔2号是谁 谢晗结局是什么</h2>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《他来了请闭眼》正在热播，紧凑悬疑的剧情也是获得一阵好评，在剧中最引人们好奇的莫过于“鲜花食人魔”的身份，“鲜花食人魔”到底是谁，然而随着15,16集的播出，鲜花食人魔的身份也被揭开，那今天我们就一起来看下鲜花食人魔2号吧！
+                        </h3>
+                    </div>
+                    <a class="media-left" href="http://www.mmonly.cc/tstx/dyyp/83710.html">
+                        <img style="width: 200px;height: 300px" src="image/30.jpg" alt="...">
+                    </a>
+                </li>
+            </ul>
+            <ul class="media-list" style="clear: both">
+                <li class="media">
+                    <a class="media-left" href="http://www.mmonly.cc/tstx/dyyp/83706.html">
+                        <img style="width: 200px;height: 300px" src="image/31.jpg" alt="...">
+                    </a>
+                    <div class="media-body">
+                        <h2 class="media-heading" style="margin: 30px auto;border-bottom: 1px solid deepskyblue">
+                            《圣诞大赢家》定档双十二上映 剧情影集评价</h2>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;转眼间已经进入12月了，在这个月里人们最期待的节日莫过于圣诞节了，而关于这个话题的电影相信大家也是很期待的，《圣诞大赢家》就是一部关于圣诞老人选拔赛的故事，该电影将于12月12日上映，让我们一起期待吧!
+                        </h3>
+                    </div>
+                </li>
+            </ul>
+            <ul class="media-list" style="clear: both">
+                <li class="media">
+                    <div class="media-body">
+                        <h2 class="media-heading" style="margin: 30px auto;border-bottom: 1px solid deepskyblue">
+                            盘点国内十部无法超越的经典电影</h2>
+                        <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;一部电影想要叫座叫做好，不但要有好的剧本，好的导演，好的制作，好的策划，好的宣传，关键更要有好的演员加盟，所谓好的演员当然是大牌的明星，因为大牌明星加盟电影必定先声夺人博得关注
+                        </h3>
+                    </div>
+                    <a class="media-left" href="http://www.mmonly.cc/tstx/dyyp/82993.html">
+                        <img style="width: 200px;height: 300px" src="image/32.jpg" alt="...">
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+
+
+        <div>
+            <div class="moivelanmu">
+                <h2 style="border-bottom: 1px solid cornflowerblue">栏目</h2>
+                <div style="display: inline-block;font-size: 20px">
+                    <a href="http://news.mtime.com/" style="margin: 10px 50px">新闻</a>
+                    <a href="http://theater.mtime.com/China_Guangdong_Province_Guangzhou/" style="margin: 10px 50px">影院</a>
+                    <a href="http://mall.mtime.com/" style="margin: 10px 50px">商城</a>
+                    <a href="http://www.mtime.com/community/" style="margin: 10px 50px">社区</a>
+                </div>
+            </div>
+
+            <div class="moivetujian1">
+                <h2 style="border-bottom: 1px solid cornflowerblue">推荐</h2>
+                <div style="display: inline-block;font-size: 20px">
+                    <a href="http://movie.mtime.com/recent/" style="margin: 10px 50px;margin-left: 100px">观影指南</a>
+                    <a href="http://news.mtime.com/conversation/" style="margin: 10px 50px">时光对话</a>
+                    <a href="http://movie.mtime.com/all/list/index.html" style="margin: 10px 50px">特色榜单</a>
+                    <a href="http://news.mtime.com/fun/" style="margin: 10px 50px;margin-right: 300px">全球拾趣</a>
+                    <a href="http://movie.mtime.com/boxoffice/" style="margin: 10px 50px;margin-left: 100px">电影票房</a>
+                    <a href="http://video.mtime.com/trailer/###" style="margin: 10px 50px">新片预告</a>
+                    <a href="http://passport.mtime.com/member/signin/?redirectUrl=http%3a%2f%2fmy.mtime.com%2fapp%2fquiz%2f" style="margin: 10px 50px">电影猜猜猜</a>
+                    <a href="http://passport.mtime.com/member/signin/?redirectUrl=http%3a%2f%2fmy.mtime.com%2fapp%2fcard%2f" style="margin: 10px 50px">卡片大富翁</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footing" style="padding-top: 80px;padding-bottom:50px;color: darkgray;text-align: center;font-size: 20px">
+            @SmBeRa
+        </div>
+    </div>
+
+
+</div>
+
+</body>
+</html>

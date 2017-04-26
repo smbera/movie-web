@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>修改个人资料</title>
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="bootstrap.min.js"></script>
+    <link href="bootstrap.min.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron" style="width: auto; height: 610px">
+        <div style="text-align: center;margin-bottom:50px;font-size: 50px;color: gray">
+            <script>document.write("修改" + localStorage.username + "的个人资料")</script>
+        </div>
+        <form class="form-horizontal" role="form">
+            <div class="form-group ">
+                <label for="inputBeforePassword3" class="col-sm-2 control-label" style="font-size: 19px">原密码</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control input-lg" id="inputBeforePassword3" placeholder="原密码">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="inputPassword3" class="col-sm-2 control-label" style="font-size: 19px">密码</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control input-lg" id="inputPassword3" placeholder="密码">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="inputConfirmPassword3" class="col-sm-2 control-label" style="font-size: 19px">确认密码</label>
+                <div class="col-sm-10">
+                    <input type="password" class="form-control input-lg" id="inputConfirmPassword3"
+                           placeholder="确认密码">
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="Sex" class="col-sm-2 control-label" style="font-size: 19px">性别</label>
+                <div class="col-sm-10">
+                    <select class="form-control input-lg" id="Sex">
+                        <option>男</option>
+                        <option>女</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="Age" class="col-sm-2 control-label" style="font-size: 19px">年龄</label>
+                <div class="col-sm-10">
+                    <select class="form-control input-lg" id="Age">
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group ">
+                <div class="col-sm-offset-2 col-sm-10 ">
+                    <button type="submit" class="btn  btn-primary btn-lg " onclick="back1()">返回上一页</button>
+                    <button type="reset" class="btn  btn-primary btn-lg " onclick="confirmSet()">确认修改</button>
+                    <button type="reset" class="btn  btn-primary btn-lg ">重置</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script>
+
+    function back1() {
+        history.back();
+    }
+    var inputBeforePassword3 = document.getElementById("inputBeforePassword3");
+    var inputPassword3 = document.getElementById("inputPassword3");
+    var inputConfirmPassword3 = document.getElementById("inputConfirmPassword3");
+    var Sex = document.getElementById("Sex");
+    var Age = document.getElementById("Age");
+
+    function confirmSet() {
+        if (inputPassword3.value == "" || inputConfirmPassword3.value == "") {
+            alert("所有信息都不能为空，请填写完整！！！");
+        }
+        if (inputPassword3.value != inputConfirmPassword3.value) {
+            alert("两次所输入的密码不一致，请重新输入！！！");
+        }
+        if (inputBeforePassword3.value != localStorage.password) {
+            alert("你所输入的原密码错误，请重新输入！！！")
+        } else if (inputPassword3.value == localStorage.password) {
+            alert("你所修改的密码和原来密码一致，请重新输入！！！")
+        } else if (inputPassword3.value != "" && inputConfirmPassword3.value != "" && inputPassword3.value == inputConfirmPassword3.value) {
+            localStorage.password = inputPassword3.value;
+            localStorage.sex = Sex.value;
+            localStorage.age = Age.value;
+            alert("你已修改成功,点击“确定”后将会跳转到登录主页面.");
+            window.open("login.html");
+        }
+
+    }
+
+
+</script>
+
+</body>
+</html>
